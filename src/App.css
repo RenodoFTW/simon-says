@@ -1,32 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url(./fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+body{
+  text-align: center;
+  background-color:#011F3F;;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#level-title
+{
+  font-family: 'Press Start 2P',cursive;
+  color: #FEF2BF;
+  font-size: 3rem;
+  margin: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  font-family:'Press Start 2P';
+  width: 50%;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.btn
+{
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
 }
+
+.red {
+  background-color: rgb(136, 19, 19);
+}
+
+.green {
+  background-color: rgb(2, 58, 2);
+}
+
+.blue {
+  background-color: rgb(1, 99, 247);
+}
+
+.yellow {
+  background-color: rgb(240, 216, 6);
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
