@@ -1,5 +1,4 @@
 import './App.css';
-import './Gamecode.js';
 import { useEffect } from 'react';
 
 function App() {
