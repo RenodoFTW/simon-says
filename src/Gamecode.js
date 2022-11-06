@@ -8,7 +8,7 @@ var start=false;
 
 var currentLevel=0;
 
-(document).keypress(function(){
+document.keypress(function(){
     if(!start){
         ("#level-title").text("Level "+currentLevel);
         nextPattern();
@@ -16,7 +16,7 @@ var currentLevel=0;
     }
 });
 
-("btn").click(function(){
+"btn".click(function(){
     var colourChosen=(this).attr("id");
     userPattern.push(colourChosen);
     playSound(colourChosen);
@@ -32,7 +32,7 @@ function answerCheck(currentLevel){
           },1000);
         }
     } else {
-        playSound("sounds_wrong");
+        playSound("wrong");
         ("body").addClass("game-over");
         ("#level-title").text("Game Over, Press Any Key To Restart");
 
@@ -72,5 +72,6 @@ function playSound(soundName){
 function startOver(){
     currentLevel=0;
     pattern=[];
+    userPattern=[];
     start=false;
 }
