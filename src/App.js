@@ -9,7 +9,7 @@ function App() {
   }, []);
   return (
     <div className='App bg-darkblue'>
-      <script src="./Gamecode.js"></script>
+      <script src="./Gamecode.js" charset="utf-8"></script>
       <h1 id="level-title">Press A Key to Start</h1>
       <div className='container'>
         <div className='row'>
